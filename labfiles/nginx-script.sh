@@ -18,3 +18,5 @@ make install
 apk del build-base
 rm -rf /tmp/nginx-1.17.1
 rm -rf /var/cache/apk/*
+sed -i 's/root   html;/root   \/var\/www\/html;/g' /etc/nginx/conf/nginx.conf
+nginx
