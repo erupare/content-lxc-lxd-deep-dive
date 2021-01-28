@@ -12,7 +12,7 @@ storage_pools:
     size: 5GB
   description: ""
   name: default
-  driver: btrfs
+  driver: zfs
 profiles:
 - config: {}
   description: ""
@@ -23,7 +23,7 @@ profiles:
       parent: lxdbr0
       type: nic
     root:
-      path: /
+      path: /dev/nvme1n1
       pool: default
       type: disk
   name: default
