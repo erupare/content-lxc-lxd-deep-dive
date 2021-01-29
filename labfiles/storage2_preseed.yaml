@@ -10,6 +10,7 @@ networks:
 storage_pools:
 - config:
     size: 5GB
+    source: /dev/nvme1n1
   description: ""
   name: default
   driver: zfs
