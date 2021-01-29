@@ -24,7 +24,7 @@ profiles:
       parent: lxdbr0
       type: nic
     root:
-      path: /dev/nvme1n1
+      path: /
       pool: default
       type: disk
   name: default
